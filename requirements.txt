@@ -1,0 +1,20 @@
+aniso8601==9.0.1
+attr==0.3.2
+attrs==22.1.0
+# Editable install with no version control (bgo==1.0.0)
+-e /home/brian/Projects/BGo12
+click==8.1.3
+Flask==2.2.2
+Flask-Cors==3.0.10
+Flask-RESTful==0.3.9
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.1
+numpy==1.23.4
+prompt-toolkit==3.0.32
+pytz==2022.6
+recordclass==0.18.0.1
+sgf==0.5
+six==1.16.0
+wcwidth==0.2.5
+Werkzeug==2.2.2
