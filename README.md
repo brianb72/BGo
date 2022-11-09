@@ -4,6 +4,12 @@ Go / Baduk / Weichi is an Asian board game played on a grid of 19 by 19 lines. B
 
 I've been a Go player for 20 years and have written Go databases in a variety of languages. This is my most current version written in Python. It also has a Javascript Go board for accessing the database through a Python Flask server.
 
+# Live demo
+
+A live demo with 100k pro games in the database can be viewed at:
+
+* __http://bgo72.herokuapp.com/__
+
 # Installing and running
 
 Install the package.
@@ -45,7 +51,7 @@ To search for games and view them:
 
 * Click an intersection or a row on the next move table to play a move.
 * Click the SGF button to load a list of games matching the search position.
-* Click a row on the list of games to load that game onto the replay board.
+ * Click a row on the list of games to load that game onto the replay board.
 * Click the replay board to advance one move, or use the controls to navigate the move list.
 
 
