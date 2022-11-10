@@ -588,7 +588,7 @@ class GameOfGo
 
     if (will_be_blank) {
       const blank = '---'
-      const table_html = `<tr><th scope="row" class="text-center align-middle">${blank}</th><td class="text-center align-middle">${blank}</td><td class="text-center align-middle">${blank}</td></tr>`
+      const table_html = `<tr><th scope="row">${blank}</th><td>${blank}</td><td>${blank}</td></tr>`
 
       for (var i = 0; i < 5; ++i) {
           left_table.append(table_html)
@@ -620,7 +620,7 @@ class GameOfGo
       per = per.toFixed(1)
 
       this.add_mark(x, y, letter, count)
-      const table_html = `<tr data-href="${letter}"><th scope="row" class="text-center align-middle">${letter}</th><td class="text-center align-middle">${count}</td><td class="text-center align-middle">${per}%</td></tr>`
+      const table_html = `<tr data-href="${letter}"><th scope="row">${letter}</th><td>${count}</td><td>${per}%</td></tr>`
       if (i < 5) {
         left_table.append(table_html)
       } else if (i < 10) {

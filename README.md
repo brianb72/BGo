@@ -8,7 +8,7 @@ I've been a Go player for 20 years and have written Go databases in a variety of
 
 A live demo with 100k pro games in the database can be viewed at:
 
-* __http://bgo72.herokuapp.com/__
+* __https://bgo72.herokuapp.com/__
 
 # Installing and running
 
