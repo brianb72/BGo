@@ -29,13 +29,17 @@
       }
 
       .column-gamelist {
-        background-color: green;
         flex: 33.33%;
         height: 100%;
       }
 
+      .scrollbox-gamelist {
+        height: 100%;
+        overflow-y: auto;
+        width: 100%;
+      }
+
       .column-replay {
-        background-color: blue;
         flex: 33.33%;
         height: 100%;
       }
@@ -55,6 +59,8 @@
         width: 45%;
         text-align: center;
       }
+
+
 
       .container-controls {
         display: flex;
@@ -89,17 +95,32 @@
       } 
 
 
-      td {
+      #mark_table_left td, #mark_table_right td {
         padding: 5px;
         text-align: center;
         width: 125px;
       }
 
-      th {
+      #mark_table_left th, #mark_table_right th {
         padding: 5px;
         text-align: center;
         width: 50px;
       }
+
+      #game_info_left td, #game_info_right td {
+        padding: 5px;
+        text-align: center;
+        width: 225px;
+      }
+
+      #game_info_left th, #game_info_right th {
+        padding: 5px;
+        text-align: center;
+        width: 50px;
+      }
+
+      
+
   </style>
 
 
@@ -132,10 +153,36 @@
 
 
       <!-- Middle Gamelist Column -->
-      <div class="column-gamelist">Middle</div>
+      <div class="column-gamelist">
+        <div class="scrollbox-gamelist">
+          <table style="width: 100%"><tbody id="games_table"></tbody></table>
+        </div>
+      </div>
       
       <!-- Right Replay Column -->
-      <div class="column-replay">Right</div>
+      <div class="column-replay">
+        <!-- Search Board -->
+        <div id="board_replay"></div>
+
+        <!-- Replay Board Control -->
+        <div class="container-controls">
+          <div id="replay_fast_back" class="control-a">&lt;&lt;</div>
+          <div id="replay_back" class="control-b">&lt;</div>
+          <div id="replay_forward" class="control-a">&gt;</div>
+          <div id="replay_fast_forward" class="control-b">&gt;&gt;</div>
+        </div>
+
+        <!-- Replay Board Game Information -->        
+        <div class="container-nextmoves">
+          <div class="table-left">
+            <table><tbody id="game_info_left"></tbody></table>
+          </div>
+          <div class="table-right">
+            <table><tbody id="game_info_right"></tbody></table>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </head>
